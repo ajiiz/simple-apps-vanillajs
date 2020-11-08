@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 body {
     height: 100vh;
     font-size: 20px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .wrapper {
@@ -16,6 +18,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    font-size: 0.7em;
+    padding: 0.5em;
+    border: 3px solid #232B32;
+    text-decoration: none;
+    background: none;
+    font-weight: bold;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background:#232B32;
+    color: #fff;
 }
 
 .text-container {
