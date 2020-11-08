@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,9 @@
 
 body {
     height: 100vh;
-    font-size: 20px;
-    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    transition: background 0.2s ease-in-out;
 }
 
 .wrapper {
@@ -21,12 +22,11 @@ body {
 }
 
 .btn {
-    font-size: 0.7em;
-    padding: 0.5em;
-    border: 3px solid #232B32;
+    font-size: 1em;
+    padding: 0.4em;
+    border: 2px solid #232B32;
     text-decoration: none;
     background: none;
-    font-weight: bold;
     transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
@@ -47,8 +47,24 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 2em;
+    transition: color 0.2s ease-in-out;
 }
 
 .text-container h1 {
     margin-bottom: 0.5em;
+}
+
+.dark {
+    color: #fff;
+    background: #232B32;
+}
+
+.btn-dark {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background:#fff;
+    color: #232B32;
 }
