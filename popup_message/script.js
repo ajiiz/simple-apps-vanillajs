@@ -7,6 +7,7 @@ btn.addEventListener('click', event => {
 
 const createElement = () => {
     const elem = document.createElement('div');
+
     elem.classList.add('msg');
     elem.innerHTML = "Dr Pepper Est.1885"
     container.appendChild(elem);
