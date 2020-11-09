@@ -31,6 +31,10 @@ body {
     transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
+.btn:focus {
+    outline: none;
+}
+
 .btn:hover {
     background-color: #fff;
     color: #232B32;
