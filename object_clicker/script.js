@@ -14,6 +14,7 @@ btn.addEventListener("click",() => {
         btn.innerHTML = "End the game";
     } else {
         clearInterval(interval);
+        alert("Your score: " + count);
         btn.innerHTML = "Play once again";
         count = 1;
     }
