@@ -11,10 +11,13 @@ btn.addEventListener("click",() => {
     start = !start;
     if (start) {
         interval = setInterval(createBubble, 1000);
+        btn.innerHTML = "End the game";
     } else {
         clearInterval(interval);
+        btn.innerHTML = "Play once again";
+        count = 1;
     }
-    count = 1;
+
 });
 
 const createBubble = () => {
