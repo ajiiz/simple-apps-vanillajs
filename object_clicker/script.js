@@ -4,14 +4,20 @@ const btn = document.getElementById("btn");
 const counter = document.getElementById("counter");
 
 let count = 1;
+let start = false;
+let interval;
 
 btn.addEventListener("click",() => {
+    start = !start;
+    if (start) {
+        interval = setInterval(createBubble, 1000);
+    } else {
+        clearInterval(interval);
+    }
     count = 1;
-    setInterval(createBubble, 1500);
 });
 
 const createBubble = () => {
-
     const elem = document.createElement("div");
     elem.classList.add("object");
     elem.style.left = (Math.floor(Math.random() * WIDTH)).toString() + "px";
