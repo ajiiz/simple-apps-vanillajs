@@ -14,6 +14,7 @@ btn.addEventListener("click",() => {
         btn.innerHTML = "End the game";
     } else {
         clearInterval(interval);
+        clearInterval(intervalScale);
         document.querySelectorAll(".object").forEach(e => e.remove()); // Delete all spheres
         alert("Your score: " + count);
         btn.innerHTML = "Play once again";
@@ -23,11 +24,18 @@ btn.addEventListener("click",() => {
 });
 
 const createBubble = () => {
+    let scale = 1;
     const elem = document.createElement("div");
     elem.classList.add("object");
     elem.style.left = (Math.floor(Math.random() * WIDTH)).toString() + "px";
     elem.style.top = (Math.floor(Math.random() * HEIGHT)).toString() + "px";
+
     document.body.appendChild(elem);
+
+    intervalScale = setInterval(() => {
+        scale += 0.01;
+        elem.style.transform = "scale("+scale+")";
+    }, 100);
 
     elem.addEventListener('click', () => {
         count++;
