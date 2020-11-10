@@ -3,7 +3,7 @@ const HEIGHT = document.body.clientHeight - 30;
 const btn = document.getElementById("btn");
 const counter = document.getElementById("counter");
 
-let count = 1;
+let count = 0;
 let start = false;
 let interval;
 
@@ -14,9 +14,10 @@ btn.addEventListener("click",() => {
         btn.innerHTML = "End the game";
     } else {
         clearInterval(interval);
+        document.querySelectorAll(".object").forEach(e => e.remove()); // Delete all spheres
         alert("Your score: " + count);
         btn.innerHTML = "Play once again";
-        count = 1;
+        count = 0; // Reset count
     }
 
 });
@@ -29,8 +30,8 @@ const createBubble = () => {
     document.body.appendChild(elem);
 
     elem.addEventListener('click', () => {
-        counter.innerHTML = count;
         count++;
+        counter.innerHTML = count;
         elem.remove();
     })
 }
