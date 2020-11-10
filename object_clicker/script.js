@@ -31,7 +31,7 @@ const createBubble = () => {
     elem.style.top = (Math.floor(Math.random() * HEIGHT)).toString() + "px";
 
     document.body.appendChild(elem);
-
+    // Spheres scalling by the time
     intervalScale = setInterval(() => {
         scale += 0.01;
         elem.style.transform = "scale("+scale+")";
