@@ -10,12 +10,44 @@ body {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     background-color: #232B32;
+    color: #fff;
 }
 
 .wrapper {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.4em;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+    margin: 1em;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #232B32;
+}
+
+.object {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    cursor: pointer;
 }
