@@ -19,3 +19,23 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+button {
+    font-size: 1em;
+    padding: 0.4em;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #232B32;
+}
