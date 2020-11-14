@@ -12,4 +12,4 @@ const generateText = () => {
     }
 }
 
-setInterval(generateText, 200);
+setInterval(generateText, 250);
