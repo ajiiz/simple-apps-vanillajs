@@ -22,13 +22,15 @@ body {
 
 .slider {
     overflow: hidden;
-    box-shadow: 7px 7px 5px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 .img-container {
     display: flex;
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.5s ease-in-out;
+    transform: translatex(0);
 }
 
 img {
