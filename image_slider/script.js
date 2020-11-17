@@ -8,7 +8,7 @@ const slideIn = () => {
     if (index > images.length - 1) {
         index = 0;
     }
-    slide.style.transform = `translateX(-${index*300}px)`;
+    slide.style.transform = `translateX(-${index*400}px)`;
 }
 
 setInterval(slideIn, 5000);
