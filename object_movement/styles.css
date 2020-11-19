@@ -19,3 +19,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#object {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    cursor: pointer;
+}
