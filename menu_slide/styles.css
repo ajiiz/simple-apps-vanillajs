@@ -101,6 +101,7 @@ body {
     height: 25px;
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
+    transition: border .3s ease-in-out;
 }
 .long-arrow-right{
     transform: rotate(135deg);
@@ -121,5 +122,14 @@ body {
     transform: rotate(-45deg) translate(15px, 4px);
     left: 0;
     top: 0;
+    transition: background-color .3s ease-in-out;
 }
 
+.long-arrow-right:hover, .long-arrow-left:hover {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.long-arrow-right:hover::after, .long-arrow-left:hover::after {
+    background-color: #000;
+}
