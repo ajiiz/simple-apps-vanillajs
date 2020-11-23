@@ -75,3 +75,14 @@ body {
 .menu ul li:hover {
     color: #d4145a;
 }
+
+.menu .footer {
+    flex: 0.2;
+    width: 100%;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10%;
+}
