@@ -29,9 +29,8 @@ body {
     align-items: center;
     background: #000;
     color: #fff;
+    /*transform: translateX(-25vw);*/
 }
-
-/* hover: #d4145a */
 
 .logo {
     font-size: 1.3rem;
@@ -86,3 +85,41 @@ body {
     align-items: center;
     padding-bottom: 10%;
 }
+
+.toggle {
+    position: absolute;
+    left: 27vw;
+    top: 5%;
+}
+
+.long-arrow-right,
+.long-arrow-left{
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.long-arrow-right{
+    transform: rotate(135deg);
+}
+
+.long-arrow-left{
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.long-arrow-right::after,
+.long-arrow-left::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate(15px, 4px);
+    left: 0;
+    top: 0;
+}
+
