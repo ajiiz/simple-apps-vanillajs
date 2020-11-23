@@ -46,4 +46,9 @@ body {
 
 .logo h1 {
     cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.logo h1:hover {
+    color: #d4145a;
 }
