@@ -54,6 +54,17 @@ body {
     color: #fff;
 }
 
+.form form input[type=submit] {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.form form input[type=submit]:hover {
+    border: 1px solid #690827;
+    background-color: #2b132a;
+    color: #690827;
+}
+
 .form form input:focus, .form form input:active {
     outline: none;
 }
