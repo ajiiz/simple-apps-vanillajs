@@ -1,7 +1,5 @@
 const textTrigger = document.getElementById("register");
-const signup = document.getElementById("signup");
-const signin = document.getElementById("signin");
-let elementsArray = document.querySelectorAll("span");
+let elementsArray = document.querySelectorAll(".trigger");
 let changedType = false;
 
 elementsArray.forEach(elem => elem.addEventListener("click", () => {
