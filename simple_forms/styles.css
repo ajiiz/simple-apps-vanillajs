@@ -34,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    animation: fadeIn 2s;
 }
 
 .form form {
@@ -60,6 +61,7 @@ body {
     color: #fff;
     border: 1px solid white;
     cursor: pointer;
+    transition: border .3s ease-in-out, background-color, .3s ease-in-out, color .3s ease-in-out;
 }
 
 .form form input[type=submit]:hover {
@@ -101,4 +103,13 @@ body {
 
 #signin {
     display: none;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
