@@ -73,7 +73,8 @@ body {
 .form #signin h1, .form #signup h1 {
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.15rem;
     flex: 0.2;
     display: flex;
     justify-content: center;
