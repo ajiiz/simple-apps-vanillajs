@@ -94,6 +94,11 @@ body {
     font-size: 0.6rem;
 }
 
-#signup {
+.form p span:hover{
+    color:#690827;
+    cursor: pointer;
+}
+
+#signin {
     display: none;
 }
