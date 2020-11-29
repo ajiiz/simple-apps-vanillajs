@@ -7,9 +7,9 @@ conv.addEventListener("click",(e) => {
     let celsius = elementsArray[0].value;
     let fah = celsius*1.8000 + 32.00;
     if (celsius === "") {
-        fah = "Insert a celsius temperature";
+        fah = "Insert a temperature in Celsius";
     } else {
-        fah = "In fahrenheit: " + fah + "F";
+        fah = "In Fahrenheit: " + fah + "F";
     }
     result.innerHTML = fah;
     result.style.opacity = "1";
